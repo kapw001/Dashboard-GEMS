@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@mipmap/ic_menuhome"
+            android:title="Home" />
+        <item
+            android:id="@+id/analytics"
+            android:icon="@mipmap/ic_menufinancial"
+            android:title="Financial Analytics" />
+
+        <item
+            android:id="@+id/academics"
+            android:icon="@mipmap/ic_menuacademics"
+            android:title="Academic Analytics" />
+
+        <item
+            android:id="@+id/myschools"
+            android:icon="@mipmap/ic_menuschool"
+            android:title="My Schools" />
+
+        <item
+            android:id="@+id/whoismyschool"
+            android:icon="@mipmap/ic_tabschool"
+            android:title="Who is in my school"></item>
+
+
+        <!--<item-->
+        <!--android:id="@+id/locationprediction"-->
+        <!--android:icon="@drawable/ic_menu_slideshow"-->
+        <!--android:title="Location Prediction" />-->
+
+
+        <!--<item-->
+        <!--android:id="@+id/logout"-->
+        <!--android:icon="@drawable/ic_menu_manage"-->
+        <!--android:title="Logout" />-->
+    </group>
+
+
+</menu>

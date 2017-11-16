@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">GEMS</string>
+
+
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="loginname">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="visitor">Visitor</string>
+    <string name="name">Name</string>
+    <string name="title_activity_fire_muster_list">FireMusterListActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="data_saved_offline_sync_later">Data saved offline and will be sync later</string>
+
+    <string name="schools_vs_visitor_count">Schools vs Visitor Count</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+
+
+    <string name="range">Range</string>
+    <string name="schools">Schools</string>
+    <string name="who_is_in_my_school">Who is in my school</string>
+    <string name="url">https://amspreprod.pappaya.co.uk</string>
+</resources>

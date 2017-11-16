@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundcolor"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5ssp"
+                    android:layout_marginRight="@dimen/_5ssp"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    app:cardElevation="2dp"
+                    app:contentPadding="@dimen/_10ssp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyleView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5ssp"
+                        android:layout_marginRight="@dimen/_5ssp"
+                        app:cardElevation="2dp"
+                        app:contentPadding="@dimen/_10ssp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Comparison of budget and expense"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp"
+                                android:textStyle="normal"
+                                app:font="@{`Geneva.ttf`}"
+                                app:textAllCaps="true" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_20ssp"></View>
+
+
+                            <com.github.mikephil.charting.charts.BarChart
+                                android:id="@+id/barchart1"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_10ssp"></View>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2ssp"
+                        android:layout_marginLeft="@dimen/_5ssp"
+                        android:layout_marginRight="@dimen/_5ssp"
+                        app:cardElevation="2dp"
+                        app:contentPadding="@dimen/_10ssp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Revenue by region"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp"
+                                android:textStyle="normal"
+                                app:font="@{`Geneva.ttf`}"
+                                app:textAllCaps="true" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_20ssp"></View>
+
+                            <com.github.mikephil.charting.charts.BarChart
+                                android:id="@+id/barchart2"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_10ssp"></View>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2ssp"
+                        android:layout_marginLeft="@dimen/_5ssp"
+                        android:layout_marginRight="@dimen/_5ssp"
+                        app:cardElevation="2dp"
+                        app:contentPadding="@dimen/_10ssp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Yearly budget"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14ssp"
+                                    android:textStyle="normal"
+                                    app:font="@{`Geneva.ttf`}"
+                                    app:textAllCaps="true" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_20ssp"></View>
+
+                                <RelativeLayout
+                                    android:id="@+id/ukbudget"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="UK"
+                                            android:textSize="@dimen/_18ssp"
+                                            android:textStyle="bold"
+                                            app:font="@{`Geneva.ttf`}" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="60dp"
+                                            android:layout_marginLeft="@dimen/_20ssp"
+                                            android:layout_marginRight="@dimen/_20ssp"
+                                            android:layout_marginTop="@dimen/_10ssp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/ukspent"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1.2"
+                                                android:background="#e34740"
+                                                android:gravity="center|start"
+                                                android:paddingLeft="@dimen/_10ssp"
+                                                android:paddingStart="@dimen/_10ssp"
+                                                android:text="$200.00"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_16ssp"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                            <TextView
+                                                android:id="@+id/ukremaining"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:background="#24c59d"
+                                                android:gravity="center|end"
+                                                android:paddingEnd="@dimen/_10ssp"
+                                                android:paddingRight="@dimen/_10ssp"
+                                                android:text="$467.00"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_16ssp"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                        </LinearLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/_20ssp"
+                                            android:layout_marginRight="@dimen/_20ssp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="@dimen/_5ssp"
+                                                android:text="Spent"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_margin="@dimen/_5ssp"
+                                                android:text="Remaining"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_20ssp"></View>
+
+                                <RelativeLayout
+                                    android:id="@+id/indiabudget"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="INDIA"
+                                            android:textSize="@dimen/_18ssp"
+                                            android:textStyle="bold"
+                                            app:font="@{`Geneva.ttf`}" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="60dp"
+                                            android:layout_marginLeft="@dimen/_20ssp"
+                                            android:layout_marginRight="@dimen/_20ssp"
+                                            android:layout_marginTop="@dimen/_10ssp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/indiaspent"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:background="#e34740"
+                                                android:gravity="center|start"
+                                                android:paddingLeft="@dimen/_10ssp"
+                                                android:paddingStart="@dimen/_10ssp"
+                                                android:text="$763.00"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_16ssp"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                            <TextView
+                                                android:id="@+id/indiaremaining"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="2"
+                                                android:background="#24c59d"
+                                                android:gravity="center|end"
+                                                android:paddingEnd="@dimen/_10ssp"
+                                                android:paddingRight="@dimen/_10ssp"
+                                                android:text="$285.00"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_16ssp"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                        </LinearLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/_20ssp"
+                                            android:layout_marginRight="@dimen/_20ssp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="@dimen/_5ssp"
+                                                android:text="Spent"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_margin="@dimen/_5ssp"
+                                                android:text="Remaining"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_20ssp"></View>
+
+                                <RelativeLayout
+                                    android:id="@+id/uaebudget"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="UAE"
+                                            android:textSize="@dimen/_18ssp"
+                                            android:textStyle="bold"
+                                            app:font="@{`Geneva.ttf`}" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="60dp"
+                                            android:layout_marginLeft="@dimen/_20ssp"
+                                            android:layout_marginRight="@dimen/_20ssp"
+                                            android:layout_marginTop="@dimen/_10ssp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/uaespent"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="2"
+                                                android:background="#e34740"
+                                                android:gravity="center|start"
+                                                android:paddingLeft="@dimen/_10ssp"
+                                                android:paddingStart="@dimen/_10ssp"
+                                                android:text="$189.00"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_16ssp"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                            <TextView
+                                                android:id="@+id/uaeremaining"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:background="#24c59d"
+                                                android:gravity="center|end"
+                                                android:paddingEnd="@dimen/_10ssp"
+                                                android:paddingRight="@dimen/_10ssp"
+                                                android:text="$657.00"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_16ssp"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                        </LinearLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/_20ssp"
+                                            android:layout_marginRight="@dimen/_20ssp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="@dimen/_5ssp"
+                                                android:text="Spent"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_margin="@dimen/_5ssp"
+                                                android:text="Remaining"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_20ssp"></View>
+
+                                <RelativeLayout
+                                    android:id="@+id/francebudget"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="FRANCE"
+                                            android:textSize="@dimen/_18ssp"
+                                            android:textStyle="bold"
+                                            app:font="@{`Geneva.ttf`}" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="60dp"
+                                            android:layout_marginLeft="@dimen/_20ssp"
+                                            android:layout_marginRight="@dimen/_20ssp"
+                                            android:layout_marginTop="@dimen/_10ssp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/francespent"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="2"
+                                                android:background="#e34740"
+                                                android:gravity="center|start"
+                                                android:paddingLeft="@dimen/_10ssp"
+                                                android:paddingStart="@dimen/_10ssp"
+                                                android:text="$189.00"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_16ssp"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                            <TextView
+                                                android:id="@+id/franceremaining"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="2"
+                                                android:background="#24c59d"
+                                                android:gravity="center|end"
+                                                android:paddingEnd="@dimen/_10ssp"
+                                                android:paddingRight="@dimen/_10ssp"
+                                                android:text="$657.00"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_16ssp"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                        </LinearLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/_20ssp"
+                                            android:layout_marginRight="@dimen/_20ssp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="@dimen/_5ssp"
+                                                android:text="Spent"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_margin="@dimen/_5ssp"
+                                                android:text="Remaining"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_20ssp"></View>
+
+                                <RelativeLayout
+                                    android:id="@+id/usabudget"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="USA"
+                                            android:textSize="@dimen/_18ssp"
+                                            android:textStyle="bold"
+                                            app:font="@{`Geneva.ttf`}" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="60dp"
+                                            android:layout_marginLeft="@dimen/_20ssp"
+                                            android:layout_marginRight="@dimen/_20ssp"
+                                            android:layout_marginTop="@dimen/_10ssp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/usaspent"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:background="#e34740"
+                                                android:gravity="center|start"
+                                                android:paddingLeft="@dimen/_10ssp"
+                                                android:paddingStart="@dimen/_10ssp"
+                                                android:text="$189.00"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_16ssp"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                            <TextView
+                                                android:id="@+id/usaremaining"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="2"
+                                                android:background="#24c59d"
+                                                android:gravity="center|end"
+                                                android:paddingEnd="@dimen/_10ssp"
+                                                android:paddingRight="@dimen/_10ssp"
+                                                android:text="$657.00"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_16ssp"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                        </LinearLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/_20ssp"
+                                            android:layout_marginRight="@dimen/_20ssp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="@dimen/_5ssp"
+                                                android:text="Spent"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_margin="@dimen/_5ssp"
+                                                android:text="Remaining"
+                                                app:font="@{`Geneva.ttf`}" />
+
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_10ssp"></View>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+</layout>

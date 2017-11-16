@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="mds"
+            type="rs.com.dashboardgems.MapDetailsShow"></variable>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundcolor"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/maplayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="rs.com.dashboardgems.MapsActivity" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/maplayout"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardElevation="2dp"
+                    app:contentPadding="@dimen/_10ssp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/maplayout"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/schoolname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10ssp"
+                            android:gravity="center"
+                            android:text="@{mds.schoolName}"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold"
+                            app:font="@{`Geneva.ttf`}" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_10ssp"
+                            android:background="@color/backgroundcolor"></View>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40ssp"
+                            android:layout_marginTop="@dimen/_10ssp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="Total Students : "
+                                android:textSize="@dimen/_12ssp"
+                                app:font="@{`Geneva.ttf`}" />
+
+                            <TextView
+                                android:id="@+id/totalstudent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10ssp"
+                                android:layout_weight="1"
+                                android:text="@{mds.totalStudents}"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold"
+                                app:font="@{`Geneva.ttf`}" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40ssp"
+                            android:layout_marginTop="@dimen/_10ssp"
+                            android:gravity="center"
+
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="Revenue for current year : "
+                                android:textSize="@dimen/_12ssp"
+                                app:font="@{`Geneva.ttf`}" />
+
+                            <TextView
+                                android:id="@+id/currentyearrevenue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10ssp"
+                                android:layout_weight="1"
+                                android:text="@{mds.revenueforcurrentyear}"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold"
+                                app:font="@{`Geneva.ttf`}" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40ssp"
+                            android:layout_marginTop="@dimen/_10ssp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/expenseTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="Expenses : "
+                                android:textSize="@dimen/_12ssp"
+                                app:font="@{`Geneva.ttf`}" />
+
+                            <TextView
+                                android:id="@+id/expenses"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10ssp"
+                                android:layout_weight="1"
+                                android:text="@{mds.expenses}"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold"
+                                app:font="@{`Geneva.ttf`}" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40ssp"
+                            android:layout_marginTop="@dimen/_10ssp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="Total profit made : "
+                                android:textSize="@dimen/_12ssp"
+                                app:font="@{`Geneva.ttf`}" />
+
+                            <TextView
+                                android:id="@+id/profit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10ssp"
+                                android:layout_weight="1"
+                                android:text="@{mds.totalProfit}"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold"
+                                app:font="@{`Geneva.ttf`}" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40ssp"
+                            android:layout_marginTop="@dimen/_10ssp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="Vacant positions : "
+                                android:textSize="@dimen/_12ssp"
+                                app:font="@{`Geneva.ttf`}" />
+
+                            <TextView
+                                android:id="@+id/vposition"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10ssp"
+                                android:layout_weight="1"
+                                android:text="@{mds.vacantPositions}"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold"
+                                app:font="@{`Geneva.ttf`}" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40ssp"
+                            android:layout_marginTop="@dimen/_10ssp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="Student Teacher Ratio : "
+                                android:textSize="@dimen/_12ssp"
+                                app:font="@{`Geneva.ttf`}" />
+
+                            <TextView
+                                android:id="@+id/ratio"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10ssp"
+                                android:layout_weight="1"
+                                android:text="@{mds.teacherStudentRatio}"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold"
+                                app:font="@{`Geneva.ttf`}" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</layout>

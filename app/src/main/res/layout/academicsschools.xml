@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundcolor"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5ssp"
+                    android:layout_marginRight="@dimen/_5ssp"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    app:cardElevation="2dp"
+                    app:contentPadding="@dimen/_10ssp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyleView"
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:scrollbars="none" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5ssp"
+                        android:layout_marginRight="@dimen/_5ssp"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        android:visibility="gone"
+                        app:cardElevation="2dp"
+                        app:contentPadding="@dimen/_10ssp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Comparison of budget and expense"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp"
+                                android:textStyle="normal"
+                                app:font="@{`Geneva.ttf`}"
+                                app:textAllCaps="true" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_10ssp"></View>
+
+                            <com.github.mikephil.charting.charts.BarChart
+                                android:id="@+id/barchart1"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_10ssp"
+                        android:visibility="gone"></View>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5ssp"
+                        android:layout_marginRight="@dimen/_5ssp"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        android:visibility="gone"
+                        app:cardElevation="2dp"
+                        app:contentPadding="@dimen/_10ssp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Revenue by school"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp"
+                                android:textStyle="normal"
+                                app:font="@{`Geneva.ttf`}"
+                                app:textAllCaps="true" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_10ssp"></View>
+
+                            <com.github.mikephil.charting.charts.BarChart
+                                android:id="@+id/barchart2"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_10ssp"
+                        android:visibility="gone"></View>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5ssp"
+                        android:layout_marginRight="@dimen/_5ssp"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        android:visibility="gone"
+                        app:cardElevation="2dp"
+                        app:contentPadding="@dimen/_10ssp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Revenue share"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp"
+                                android:textStyle="normal"
+                                app:font="@{`Geneva.ttf`}"
+                                app:textAllCaps="true" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_10ssp"></View>
+
+                            <com.github.mikephil.charting.charts.PieChart
+                                android:id="@+id/piechart"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_10ssp"
+                        android:visibility="gone"></View>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5ssp"
+                        android:layout_marginRight="@dimen/_5ssp"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        app:cardElevation="2dp"
+                        app:contentPadding="@dimen/_10ssp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Student Retention Rate"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp"
+                                android:textStyle="normal"
+                                app:font="@{`Geneva.ttf`}"
+                                app:textAllCaps="true" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_10ssp"></View>
+
+                            <com.github.mikephil.charting.charts.BarChart
+                                android:id="@+id/barchart3"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_10ssp"
+                        android:visibility="visible"></View>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5ssp"
+                        android:layout_marginRight="@dimen/_5ssp"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        app:cardElevation="2dp"
+                        app:contentPadding="@dimen/_10ssp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Pass percentage"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp"
+                                android:textStyle="normal"
+                                app:font="@{`Geneva.ttf`}"
+                                app:textAllCaps="true" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_10ssp"></View>
+
+                            <com.github.mikephil.charting.charts.BarChart
+                                android:id="@+id/barchart4"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_10ssp"
+                        android:visibility="visible"></View>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5ssp"
+                        android:layout_marginRight="@dimen/_5ssp"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        app:cardElevation="2dp"
+                        app:contentPadding="@dimen/_10ssp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Overall Performance"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp"
+                                android:textStyle="normal"
+                                app:font="@{`Geneva.ttf`}"
+                                app:textAllCaps="true" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_10ssp"></View>
+
+                            <com.github.mikephil.charting.charts.BarChart
+                                android:id="@+id/barchart5"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10ssp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="** Overall performance has been calculated by consolidating Pass Percentage, Retention Rate, Student Teacher ratio of individual schools"
+                                    android:textSize="@dimen/_8ssp"
+                                    app:font="@{`Geneva.ttf`}" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_15ssp"></View>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+</layout>

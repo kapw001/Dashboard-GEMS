@@ -1,0 +1,427 @@
+[{
+		"regionName": "India",
+		"Latitude": 20.593684,
+		"Longitude": 78.962880,
+		"SchoolList": [{
+				"Name": "GEMS International School - Karnal",
+				"Latitude": 29.716711,
+				"Longitude": 76.983381,
+				"Revenue": 12.5,
+				"Budget": 9.0,
+				"Expense": 6.7,
+				"Retention": 90,
+				"New_Enrollment": 100,
+				"Total_Student": 1300
+			},
+			{
+				"Name": "GEMS International School (ISP)-Gurgaon",
+				"Latitude": 28.492435,
+				"Longitude": 77.016683,
+				"Revenue": 13.5,
+				"Budget": 10.7,
+				"Expense": 8.9,
+				"Retention": 95,
+				"New_Enrollment": 150,
+				"Total_Student": 1150
+			},
+			{
+				"Name": "GEMS Modern Academy- Gurgaon",
+				"Latitude": 28.417514,
+				"Longitude": 77.049680,
+				"Revenue": 13.5,
+				"Budget": 9.5,
+				"Expense": 10.1,
+				"Retention": 80,
+				"New_Enrollment": 100,
+				"Total_Student": 1350
+			},
+			{
+				"Name": "GEMS Public School - Anantnag",
+				"Latitude": 33.802825,
+				"Longitude": 75.091386,
+				"Revenue": 15.0,
+				"Budget": 12.7,
+				"Expense": 10.1,
+				"Retention": 92,
+				"New_Enrollment": 200,
+				"Total_Student": 1500
+			},
+			{
+				"Name": "GEMS Public School - Bathinda",
+				"Latitude": 30.157018,
+				"Longitude": 74.970559,
+				"Revenue": 17.5,
+				"Budget": 14.7,
+				"Expense": 12.1,
+				"Retention": 91,
+				"New_Enrollment": 170,
+				"Total_Student": 1370
+			},
+			{
+				"Name": "GEMS Public School - Bhopal",
+				"Latitude": 23.179218,
+				"Longitude": 77.493739,
+				"Revenue": 15.0,
+				"Budget": 12.5,
+				"Expense": 13.1,
+				"Retention": 89,
+				"New_Enrollment": 230,
+				"Total_Student": 1330
+			},
+			{
+				"Name": "GEMS Public School - Guntur",
+				"Latitude": 16.385003,
+				"Longitude": 80.522736,
+				"Revenue": 19.5,
+				"Budget": 15.7,
+				"Expense": 12.1,
+				"Retention": 93,
+				"New_Enrollment": 140,
+				"Total_Student": 1160
+			},
+			{
+				"Name": "GEMS Public School - Gwalior",
+				"Latitude": 26.180142,
+				"Longitude": 78.213292,
+				"Revenue": 10.5,
+				"Budget": 8.7,
+				"Expense": 5.1,
+				"Retention": 92,
+				"New_Enrollment": 200,
+				"Total_Student": 1400
+			},
+			{
+				"Name": "GEMS Public School - Haldwani",
+				"Latitude": 29.190299,
+				"Longitude": 79.464933,
+				"Revenue": 15.5,
+				"Budget": 14.7,
+				"Expense": 13.8,
+				"Retention": 90,
+				"New_Enrollment": 240,
+				"Total_Student": 1140
+			},
+			{
+				"Name": "GEMS Public School - Indore",
+				"Latitude": 22.765906,
+				"Longitude": 75.935157,
+				"Revenue": 17.0,
+				"Budget": 15.7,
+				"Expense": 14.1,
+				"Retention": 88,
+				"New_Enrollment": 150,
+				"Total_Student": 1250
+			},
+			{
+				"Name": "GEMS Public School - Patiala",
+				"Latitude": 30.321769,
+				"Longitude": 76.452645,
+				"Revenue": 20.5,
+				"Budget": 17.7,
+				"Expense": 18.1,
+				"Retention": 94,
+				"New_Enrollment": 120,
+				"Total_Student": 1320
+			},
+			{
+				"Name": "Little GEMS International - Jawahar Nagar-Kochi",
+				"Latitude": 9.974886,
+				"Longitude": 76.300197,
+				"Revenue": 16.5,
+				"Budget": 14.7,
+				"Expense": 10.1,
+				"Retention": 92,
+				"New_Enrollment": 230,
+				"Total_Student": 1580
+			},
+			{
+				"Name": "Little GEMS International - Sector 51-Gurgaon",
+				"Latitude": 28.432473,
+				"Longitude": 77.072199,
+				"Revenue": 27.3,
+				"Budget": 22.7,
+				"Expense": 20.1,
+				"Retention": 80,
+				"New_Enrollment": 300,
+				"Total_Student": 1350
+			},
+			{
+				"Name": "Little GEMS International - SmartCity Kochi",
+				"Latitude": 10.011397,
+				"Longitude": 76.366652,
+				"Revenue": 35.1,
+				"Budget": 32.7,
+				"Expense": 29.1,
+				"Retention": 83,
+				"New_Enrollment": 350,
+				"Total_Student": 1450
+			},
+			{
+				"Name": "GEMS Akademia International School-Kolkata",
+				"Latitude": 22.425485,
+				"Longitude": 88.272296,
+				"Revenue": 25.0,
+				"Budget": 22.7,
+				"Expense": 21.1,
+				"Retention": 97,
+				"New_Enrollment": 400,
+				"Total_Student": 1400
+			},
+			{
+				"Name": "GEMS Public School - Rajkot",
+				"Latitude": 22.338763,
+				"Longitude": 70.735120,
+				"Revenue": 19.4,
+				"Budget": 17.7,
+				"Expense": 15.1,
+				"Retention": 87,
+				"New_Enrollment": 140,
+				"Total_Student": 1340
+			}
+		]
+	},
+	{
+		"regionName": "United Kingdom",
+		"Latitude": 55.378051,
+		"Longitude": -3.435973,
+		"SchoolList": [{
+				"Name": "GEMS Didcot Primary Academy-London, United Kingdom",
+				"Latitude": 51.605634,
+				"Longitude": -1.269479,
+				"Revenue": 30.5,
+				"Budget": 27.7,
+				"Expense": 29.1,
+				"Retention": 90,
+				"New_Enrollment": 40,
+				"Total_Student": 240
+			},
+			{
+				"Name": "Sherfield School-Sherfield-on-Loddon, United Kingdom",
+				"Latitude": 51.308682,
+				"Longitude": -1.022250,
+				"Revenue": 43.5,
+				"Budget": 40.0,
+				"Expense": 37.1,
+				"Retention": 98,
+				"New_Enrollment": 100,
+				"Total_Student": 400
+			},
+			{
+				"Name": "The Hampshire School Chelsea",
+				"Latitude": 51.487083,
+				"Longitude": -0.171537,
+				"Revenue": 38.5,
+				"Budget": 35.7,
+				"Expense": 33.1,
+				"Retention": 99,
+				"New_Enrollment": 80,
+				"Total_Student": 430
+			},
+			{
+				"Name": "The Webber Independent School",
+				"Latitude": 52.061124,
+				"Longitude": -0.764665,
+				"Revenue": 32.5,
+				"Budget": 28.7,
+				"Expense": 25.1,
+				"Retention": 97,
+				"New_Enrollment": 110,
+				"Total_Student": 450
+			},
+			{
+				"Name": "GEMS Twickenham Primary Academy",
+				"Latitude": 51.445054,
+				"Longitude": -0.339672,
+				"Revenue": 42.5,
+				"Budget": 38.7,
+				"Expense": 40.1,
+				"Retention": 80,
+				"New_Enrollment": 89,
+				"Total_Student": 289
+			}
+		]
+	}, {
+		"regionName": "UAE",
+		"Latitude": 23.424076,
+		"Longitude": 53.847818,
+		"SchoolList": [{
+				"Name": "Al Khaleej National School,Dubai",
+				"Latitude": 25.234458,
+				"Longitude": 55.352844,
+				"Revenue": 12.5,
+				"Budget": 10.7,
+				"Expense": 8.1,
+				"Retention": 85,
+				"New_Enrollment": 300,
+				"Total_Student": 1500
+			},
+			{
+				"Name": "Bradenton Preparatory Academy,Dubai",
+				"Latitude": 25.034726,
+				"Longitude": 55.228561,
+				"Revenue": 22.1,
+				"Budget": 20.7,
+				"Expense": 18.1,
+				"Retention": 92,
+				"New_Enrollment": 350,
+				"Total_Student": 1650
+			},
+			{
+				"Name": "Dubai American Academy",
+				"Latitude": 25.104346,
+				"Longitude": 55.181067,
+				"Revenue": 27.5,
+				"Budget": 24.7,
+				"Expense": 22.1,
+				"Retention": 90,
+				"New_Enrollment": 370,
+				"Total_Student": 1670
+			},
+			{
+				"Name": "GEMS Al Barsha National School",
+				"Latitude": 25.079854,
+				"Longitude": 55.230372,
+				"Revenue": 20.5,
+				"Budget": 17.7,
+				"Expense": 15.1,
+				"Retention": 89,
+				"New_Enrollment": 260,
+				"Total_Student": 1560
+			},
+			{
+				"Name": "GEMS Al Barsha National School for Boys",
+				"Latitude": 25.079854,
+				"Longitude": 55.230372,
+				"Revenue": 30.5,
+				"Budget": 25.7,
+				"Expense": 22.1,
+				"Retention": 87,
+				"New_Enrollment": 400,
+				"Total_Student": 1700
+			},
+			{
+				"Name": "GEMS American Academy (GAA)",
+				"Latitude": 25.104346,
+				"Longitude": 55.181067,
+				"Revenue": 28.5,
+				"Budget": 23.7,
+				"Expense": 25.1,
+				"Retention": 96,
+				"New_Enrollment": 350,
+				"Total_Student": 1550
+			},
+			{
+				"Name": "GEMS Cambridge International School (CIA)",
+				"Latitude": 24.307500,
+				"Longitude": 54.619890,
+				"Revenue": 32.5,
+				"Budget": 29.7,
+				"Expense": 26.1,
+				"Retention": 99,
+				"New_Enrollment": 460,
+				"Total_Student": 1660
+			},
+			{
+				"Name": "GEMS FirstPoint School",
+				"Latitude": 25.089368,
+				"Longitude": 55.375475,
+				"Revenue": 12.5,
+				"Budget": 9.7,
+				"Expense": 6.1,
+				"Retention": 93,
+				"New_Enrollment": 400,
+				"Total_Student": 1670
+			},
+			{
+				"Name": "GEMS Founders School, Dubai",
+				"Latitude": 25.079226,
+				"Longitude": 55.228336,
+				"Revenue": 26.2,
+				"Budget": 23.7,
+				"Expense": 20.1,
+				"Retention": 86,
+				"New_Enrollment": 350,
+				"Total_Student": 1650
+			},
+			{
+				"Name": "GEMS Heritage Indian School - Dubai",
+				"Latitude": 25.123546,
+				"Longitude": 55.256858,
+				"Revenue": 33.3,
+				"Budget": 28.4,
+				"Expense": 24.1,
+				"Retention": 87,
+				"New_Enrollment": 320,
+				"Total_Student": 1570
+			},
+			{
+				"Name": "GEMS International School - Al Khail",
+				"Latitude": 25.121978,
+				"Longitude": 55.254965,
+				"Revenue": 22.2,
+				"Budget": 17.7,
+				"Expense": 15.1,
+				"Retention": 90,
+				"New_Enrollment": 360,
+				"Total_Student": 1480
+			},
+			{
+				"Name": "GEMS Metropole School",
+				"Latitude": 25.041690,
+				"Longitude": 55.243434,
+				"Revenue": 18.5,
+				"Budget": 15.5,
+				"Expense": 14.1,
+				"Retention": 88,
+				"New_Enrollment": 390,
+				"Total_Student": 1680
+			},
+			{
+				"Name": "GEMS Millennium School",
+				"Latitude": 25.298932,
+				"Longitude": 55.456464,
+				"Revenue": 22.5,
+				"Budget": 18.3,
+				"Expense": 15.1,
+				"Retention": 93,
+				"New_Enrollment": 410,
+				"Total_Student": 1489
+			},
+			{
+				"Name": "GEMS Modern Academy (GMA)",
+				"Latitude": 25.153504,
+				"Longitude": 55.375977,
+				"Revenue": 27.5,
+				"Budget": 23.7,
+				"Expense": 20.1,
+				"Retention": 98,
+				"New_Enrollment": 430,
+				"Total_Student": 1740
+			},
+			{
+				"Name": "GEMS New Millennium School",
+				"Latitude": 25.124140,
+				"Longitude": 55.256896,
+				"Revenue": 21.5,
+				"Budget": 17.1,
+				"Expense": 15.0,
+				"Retention": 94,
+				"New_Enrollment": 380,
+				"Total_Student": 1509
+			},
+			{
+				"Name": "GEMS Royal Dubai School",
+				"Latitude": 25.237241,
+				"Longitude": 55.438470,
+				"Revenue": 30.5,
+				"Budget": 26.0,
+				"Expense": 32.1,
+				"Retention": 97,
+				"New_Enrollment": 300,
+				"Total_Student": 1580
+			}
+
+		]
+
+	}
+]
